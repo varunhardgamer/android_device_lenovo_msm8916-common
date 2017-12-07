@@ -40,7 +40,8 @@
 #include "log.h"
 
 #include "init_msm8916.h"
-
+namespace android {
+namespace init {
 using android::base::GetProperty;
 
 __attribute__ ((weak))
@@ -104,4 +105,7 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
+}
+
+}
 }
